@@ -11,6 +11,8 @@ A list to help me keep track of possible software alternatives to make the exper
 ## Software
 I tend to use open source and FOSS software, which in the most part is available for all platforms.
 
+The setback at the moment is with forced ecosystems that don't exist on Linux or yet to be found. (ie: iCloud Drive, IDM...etc)
+
 - [x] Browser
     - Firefox (native) https://flathub.org/apps/org.mozilla.firefox
     - Brave (native) https://brave.com/linux/#release-channel-installation
@@ -50,25 +52,26 @@ I tend to use open source and FOSS software, which in the most part is available
 - [x] Screen recorder [many, [OBS Studio](https://flathub.org/apps/com.obsproject.Studio)] (native)
 
 ## Useful
-- [RPM Fusion](https://rpmfusion.org/)
-- [Rclone](https://rclone.org/)
-- [Rclone Browser](https://github.com/kapitainsky/RcloneBrowser)
 - [Bottles](https://github.com/bottlesdevs/Bottles): Run Windows software and games on Linux
 - [Piper](https://github.com/libratbag/piper): GTK application to configure gaming devices
 - [Solaar](https://github.com/pwr-Solaar/Solaar): Linux device manager for Logitech devices
+- [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal): A graphical utility to review and modify permissions from Flatpak apps
+- [Mission Center](https://flathub.org/apps/io.missioncenter.MissionCenter): Monitor your CPU, Memory, Disk, Network and GPU usage
+- [Parabolic](https://flathub.org/apps/org.nickvision.tubeconverter): A basic `yt-dlp` frontend
 - [Lutris](https://flathub.org/apps/net.lutris.Lutris): Lutris helps you install games from all eras and from most gaming systems
 - [Heroic Games Launcher](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher): A games launcher for GOG, Amazon and Epic Games
 - [Cartridges](https://flathub.org/apps/page.kramo.Cartridges): a simple game launcher for all of your games
-- [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal): A graphical utility to review and modify permissions from Flatpak apps
-- XWayland Video Bridge: Utility to allow streaming Wayland windows to X applications
+- [Dosage](https://flathub.org/apps/io.github.diegopvlk.Dosage): Keep track of your treatments
 - [Gnome Dconf Editor](https://wiki.gnome.org/Apps(2f)DconfEditor.html)
 - [Gnome Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks)
 - [Gnome Extensions Manager](https://flathub.org/apps/com.mattjakeman.ExtensionManager)
     - Reference: https://www.omgubuntu.co.uk/best-gnome-shell-extensions
 - [Gnome Firmware](https://gitlab.gnome.org/World/gnome-firmware)
-- [Mission Center](https://flathub.org/apps/io.missioncenter.MissionCenter): Monitor your CPU, Memory, Disk, Network and GPU usage
-- [Dosage](https://flathub.org/apps/io.github.diegopvlk.Dosage): Keep track of your treatments
-- [Parabolic](https://flathub.org/apps/org.nickvision.tubeconverter): A basic yt-dlp frontend
+- [RPM Fusion](https://rpmfusion.org/)
+- [Rclone](https://rclone.org/)
+- [Rclone Browser](https://github.com/kapitainsky/RcloneBrowser)
+- XWayland Video Bridge: Utility to allow streaming Wayland windows to X applications
+    - As far as I can tell, this isn't needed anymore (ie: Discord screen share), need to verify
 - Fedora recommendations
     - https://www.youtube.com/watch?v=dZIfjbZN0H8
     - https://www.youtube.com/watch?v=BYIDoD8VdAw
