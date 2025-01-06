@@ -68,6 +68,7 @@ I tend to use open source and FOSS software, which in the most part is available
 - [Gnome Firmware](https://gitlab.gnome.org/World/gnome-firmware)
 - [Mission Center](https://flathub.org/apps/io.missioncenter.MissionCenter): Monitor your CPU, Memory, Disk, Network and GPU usage
 - [Dosage](https://flathub.org/apps/io.github.diegopvlk.Dosage): Keep track of your treatments
+- [Parabolic](https://flathub.org/apps/org.nickvision.tubeconverter): A basic yt-dlp frontend
 - Fedora recommendations
     - https://www.youtube.com/watch?v=dZIfjbZN0H8
     - https://www.youtube.com/watch?v=BYIDoD8VdAw
