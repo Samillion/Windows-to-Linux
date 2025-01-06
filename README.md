@@ -37,6 +37,7 @@ I tend to use open source and FOSS software, which in the most part is available
 - [x] Transcoder [[Handbrake](https://github.com/HandBrake/HandBrake)] (native)
 - [x] Remote desktop [[Rustdesk](https://github.com/rustdesk/rustdesk)] (native)
 - [x] Password manager [[KeePassXC](https://github.com/keepassxreboot/keepassxc)] (native)
+- [x] Multi-factor auth: [Ente Authe](https://github.com/ente-io/ente#ente-auth) (native)
 - [x] Local share [[LocalSend](https://github.com/localsend/localsend)] (native)
 - [x] Messaging
     - [SimpleXChat](https://github.com/simplex-chat/simplex-chat) (native)
