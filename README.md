@@ -22,7 +22,8 @@ I tend to use open source and FOSS software, which in the most part is available
 - [ ] Proton Drive (none, web - [reference](https://www.reddit.com/r/ProtonDrive/comments/1e34coe/discussion_thread_for_proton_drive_on_linux_lets/))
     - Test: Rclone: https://rclone.org/protondrive/
 - [ ] Internet Download Manager [IDM] (none)
-    - Specifically its browser extension integration to capture videos, [ABDM](https://github.com/amir1376/ab-download-manager) is a close match, waiting on [feature progress](https://github.com/amir1376/ab-download-manager/issues/9), if any.
+    - Specifically its browser extension integration to capture videos and download them
+    - [ABDM](https://github.com/amir1376/ab-download-manager) is a close match, waiting on [feature progress](https://github.com/amir1376/ab-download-manager/issues/9), if any.
     - XDM was a possible choice, but development halted for a long time now [[reference](https://github.com/subhra74/xdm/discussions/768#discussioncomment-10842375)]
     - `yt-dlp` offers a static list, so it's not a viable alternative
     - Find possible video extractors? (ie: apps or extensions) (none so far)
