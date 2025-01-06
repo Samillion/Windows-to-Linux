@@ -26,6 +26,7 @@ The setback at the moment is with forced ecosystems that don't exist on Linux or
     - Test: `Rclone` https://rclone.org/protondrive/
 - [ ] Internet Download Manager [IDM] (none)
     - Specifically its browser extension integration to capture videos and download them
+    - Why this QoL is needed for me: [reference](https://github.com/amir1376/ab-download-manager/issues/9#issuecomment-2470097235)
     - [ABDM](https://github.com/amir1376/ab-download-manager) is a close match, waiting on [feature progress](https://github.com/amir1376/ab-download-manager/issues/9), if any.
     - XDM was a possible choice, but development halted for a long time now [[reference](https://github.com/subhra74/xdm/discussions/768#discussioncomment-10842375)]
     - `yt-dlp` offers a static list, so it's not a viable alternative
