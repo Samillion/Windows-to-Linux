@@ -17,8 +17,12 @@ The setback at the moment is with forced ecosystems that don't exist on Linux or
     - Firefox (native) https://flathub.org/apps/org.mozilla.firefox
     - Brave (native) https://brave.com/linux/#release-channel-installation
     - Chromium (native) https://docs.fedoraproject.org/en-US/quick-docs/installing-chromium-or-google-chrome-browsers/
-- [x] Google Drive (`rclone + rclone browser` or `Gnome Accounts`)
-- [x] One Drive (`rclone + rclone browser` or `Gnome Accounts`)
+- [x] Google Drive (`Rclone` or `Gnome Accounts`)
+    - `Rclone`: https://rclone.org/drive/
+    - `Gnome Accounts`: Online use only
+- [x] One Drive (`Rclone` or `Gnome Accounts`)
+    - `Rclone`: https://rclone.org/onedrive/
+    - `Gnome Accounts`: Online use only, Gnome 46+
 - [x] Dropbox (native) https://www.dropbox.com/install-linux
 - [x] MEGA (native) https://mega.io/desktop#download
 - [ ] iCloud Drive (none, web)
@@ -30,7 +34,8 @@ The setback at the moment is with forced ecosystems that don't exist on Linux or
     - [ABDM](https://github.com/amir1376/ab-download-manager) is a close match, waiting on [feature progress](https://github.com/amir1376/ab-download-manager/issues/9), if any.
     - XDM was a possible choice, but development halted for a long time now [[reference](https://github.com/subhra74/xdm/discussions/768#discussioncomment-10842375)]
     - `yt-dlp` offers a static list, so it's not a viable alternative
-    - Find possible video extractors? (ie: apps or extensions) (none so far)
+    - Find possible video extractors? (ie: apps or extensions) (incomplete)
+        - [hls-downloader](https://github.com/puemos/hls-downloader): Web Extension for sniffing and downloading HTTP Live streams (HLS)
 - [x] Text editor, document viewer, office suit (native, many)
 - [x] Media player [`mpv` + `yt-dlp` + `ffmpeg`]
     - `mpv`: https://packages.fedoraproject.org/pkgs/mpv/mpv/
@@ -53,6 +58,7 @@ The setback at the moment is with forced ecosystems that don't exist on Linux or
 - [x] Screen recorder [many, [OBS Studio](https://flathub.org/apps/com.obsproject.Studio)] (native)
 
 ## Useful
+- [Rclone Browser](https://github.com/kapitainsky/RcloneBrowser): Simple cross platform GUI for Rclone
 - [Bottles](https://github.com/bottlesdevs/Bottles): Run Windows software and games on Linux
 - [Piper](https://github.com/libratbag/piper): GTK application to configure gaming devices
 - [Solaar](https://github.com/pwr-Solaar/Solaar): Linux device manager for Logitech devices
@@ -61,16 +67,14 @@ The setback at the moment is with forced ecosystems that don't exist on Linux or
 - [Parabolic](https://flathub.org/apps/org.nickvision.tubeconverter): A basic `yt-dlp` frontend
 - [Lutris](https://flathub.org/apps/net.lutris.Lutris): Lutris helps you install games from all eras and from most gaming systems
 - [Heroic Games Launcher](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher): A games launcher for GOG, Amazon and Epic Games
-- [Cartridges](https://flathub.org/apps/page.kramo.Cartridges): a simple game launcher for all of your games
+- [Cartridges](https://flathub.org/apps/page.kramo.Cartridges): A simple game launcher for all of your games
 - [Dosage](https://flathub.org/apps/io.github.diegopvlk.Dosage): Keep track of your treatments
-- [Gnome Dconf Editor](https://wiki.gnome.org/Apps(2f)DconfEditor.html)
-- [Gnome Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks)
-- [Gnome Extensions Manager](https://flathub.org/apps/com.mattjakeman.ExtensionManager)
+- [Gnome Dconf Editor](https://wiki.gnome.org/Apps(2f)DconfEditor.html): A viewer and editor of applications internal settings
+- [Gnome Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks): Customize Gnome DE
+- [Gnome Extensions Manager](https://flathub.org/apps/com.mattjakeman.ExtensionManager): A utility for browsing and installing GNOME Shell Extensions
     - Reference: https://www.omgubuntu.co.uk/best-gnome-shell-extensions
-- [Gnome Firmware](https://gitlab.gnome.org/World/gnome-firmware)
-- [RPM Fusion](https://rpmfusion.org/)
-- [Rclone](https://rclone.org/)
-- [Rclone Browser](https://github.com/kapitainsky/RcloneBrowser)
+- [Gnome Firmware](https://gitlab.gnome.org/World/gnome-firmware): Manage firmware on devices supported by `fwupd`
+- [RPM Fusion](https://rpmfusion.org/): Provides software that the Fedora Project doesn't want to ship
 - XWayland Video Bridge: Utility to allow streaming Wayland windows to X applications
     - As far as I can tell, this isn't needed anymore (ie: Discord screen share), need to verify
 - Fedora recommendations
