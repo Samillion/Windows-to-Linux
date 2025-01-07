@@ -14,20 +14,21 @@ The goal is to try and plan the best route before making the switch, to not hop 
 I tend to use open source and FOSS software a lot, which in the most part is available for many platforms or an alternative exists already.
 
 #### Setbacks (cons)
-- Forced ecosystems that don't exist on Linux or yet to be found. (ie: iCloud Drive, WhatsApp, IDM...etc)
-  - Internet Download Manager (IDM) alternative [✔️ `solved`:`listed`]
-    - Specifically its browser extension integration to capture videos and download them
-    - [ABDM](https://github.com/amir1376/ab-download-manager) is a close match, waiting on [feature progress](https://github.com/amir1376/ab-download-manager/issues/9), if any
-    - XDM was a possible choice, but development halted for a long time now [[reference](https://github.com/subhra74/xdm/discussions/768#discussioncomment-10842375)]
-    - `yt-dlp` offers a static list, so it's not a viable alternative
-  - WhatsApp [✔️ `solved`:`listed`]
-- Cloud: `Rclone` is a huge learning curve, even with a frontend like `Rclone Browser`
-  - Gaining sync (local storage) access with my cloud services would definitely be an annoying chore
-  - Affects `Proton Drive`, `Google Drive` and `Microsoft OneDrive`
+- Cloud:
+  - No alternative or method for `iCloud Drive`
+  - `Rclone` is a huge learning curve, even with a frontend like `Rclone Browser`
+    - Having auto-sync and mount (local copy) access with my cloud services would definitely be an annoying chore
+    - Affects `Proton Drive`, `Google Drive` and `Microsoft OneDrive`
 - Flatpaks are sandboxed by default, which can result in mis-matched themes, no access to folders and such
   - Use `dnf`/`rpm` for installing a package if available and maintained, otherwise, use verified Flatpaks
   - Use `Flatseal` to resolve sandboxed issues, if any
-  - As far as I can tell, sometimes the name of the related environment variables are needed, which is a chore, since I'll have to research them when needed
+    - As far as I can tell, sometimes the name of the related environment variables are needed, which is a chore, since I'll have to research them when needed
+- Internet Download Manager (IDM) alternative [✔️ `solved`:`listed`]
+  - Specifically its browser extension integration to capture videos and download them
+  - [ABDM](https://github.com/amir1376/ab-download-manager) is a close match, waiting on [feature progress](https://github.com/amir1376/ab-download-manager/issues/9), if any
+  - XDM was a possible choice, but development halted for a long time now [[reference](https://github.com/subhra74/xdm/discussions/768#discussioncomment-10842375)]
+  - `yt-dlp` offers a static list, so it's not a viable alternative
+- WhatsApp [✔️ `solved`:`listed`]
 
 ## Software
 - [x] Browser
@@ -66,7 +67,7 @@ I tend to use open source and FOSS software a lot, which in the most part is ava
   - [Telegram](https://flathub.org/apps/org.telegram.desktop) (native)
   - [Fractal](https://gitlab.gnome.org/World/fractal) [Matrix] (native)
   - [Discord](https://flathub.org/apps/com.discordapp.Discord) (native)
-  - WhatsApp [eww] (Web app, through Brave or Chromium)
+  - WhatsApp (Web app, through Brave or Chromium)
 - [x] Equalizer [[Easy Effects](https://github.com/wwmm/easyeffects)] (native)
 - [x] Screen recorder [many, [OBS Studio](https://flathub.org/apps/com.obsproject.Studio)] (native)
 
