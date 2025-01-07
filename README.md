@@ -41,12 +41,12 @@ I tend to use open source and FOSS software a lot, which in the most part is ava
 - [x] MEGA (native) https://mega.io/desktop#download
 - [ ] Internet Download Manager [IDM] (none)
   - Specifically its browser extension integration to capture videos and download them
-  - Why this QoL is needed for me: [reference](https://github.com/amir1376/ab-download-manager/issues/9#issuecomment-2470097235)
   - [ABDM](https://github.com/amir1376/ab-download-manager) is a close match, waiting on [feature progress](https://github.com/amir1376/ab-download-manager/issues/9), if any
   - XDM was a possible choice, but development halted for a long time now [[reference](https://github.com/subhra74/xdm/discussions/768#discussioncomment-10842375)]
   - `yt-dlp` offers a static list, so it's not a viable alternative
   - Find possible video extractors? (ie: apps or extensions) [incomplete]
-    - [hls-downloader](https://github.com/puemos/hls-downloader): Web Extension for sniffing and downloading HTTP Live streams (HLS)
+    - [hls-downloader](https://github.com/puemos/hls-downloader): Web Extension for sniffing and downloading HTTP Live streams (HLS) [partial match]
+    - [cat-catch](https://github.com/xifangczy/cat-catch): Sniffing resources from a webpage [✔️ good match]
 - [x] Text editor, document viewer, office suit (native, many)
 - [x] Media player [`mpv` + `yt-dlp` + `ffmpeg`]
   - `mpv`: https://packages.fedoraproject.org/pkgs/mpv/mpv/
