@@ -15,6 +15,11 @@ I tend to use open source and FOSS software a lot, which in the most part is ava
 
 #### Setbacks (cons)
 - Forced ecosystems that don't exist on Linux or yet to be found. (ie: iCloud Drive, WhatsApp, IDM...etc)
+  - Internet Download Manager (IDM) alternative [✔️ `solved`:`listed`]
+    - [ABDM](https://github.com/amir1376/ab-download-manager) is a close match, waiting on [feature progress](https://github.com/amir1376/ab-download-manager/issues/9), if any
+    - XDM was a possible choice, but development halted for a long time now [[reference](https://github.com/subhra74/xdm/discussions/768#discussioncomment-10842375)]
+    - `yt-dlp` offers a static list, so it's not a viable alternative
+  - WhatsApp [✔️ `solved`:`listed`]
 - Cloud: `Rclone` is a huge learning curve, even with a frontend like `Rclone Browser`
   - Gaining sync (local storage) access with my cloud services would definitely be an annoying chore
   - Affects `Proton Drive`, `Google Drive` and `Microsoft OneDrive`
@@ -39,14 +44,11 @@ I tend to use open source and FOSS software a lot, which in the most part is ava
   - Test: `Rclone` https://rclone.org/protondrive/
 - [x] Dropbox (native) https://www.dropbox.com/install-linux
 - [x] MEGA (native) https://mega.io/desktop#download
-- [ ] Internet Download Manager [IDM] (none)
+- [x] Internet Download Manager [IDM] (none)
   - Specifically its browser extension integration to capture videos and download them
-  - [ABDM](https://github.com/amir1376/ab-download-manager) is a close match, waiting on [feature progress](https://github.com/amir1376/ab-download-manager/issues/9), if any
-  - XDM was a possible choice, but development halted for a long time now [[reference](https://github.com/subhra74/xdm/discussions/768#discussioncomment-10842375)]
-  - `yt-dlp` offers a static list, so it's not a viable alternative
-  - Find possible video extractors? (ie: apps or extensions) [incomplete]
-    - [hls-downloader](https://github.com/puemos/hls-downloader): Web Extension for sniffing and downloading HTTP Live streams (HLS) [partial match]
-    - [cat-catch](https://github.com/xifangczy/cat-catch): Sniffing resources from a webpage [✔️ good match]
+  - Video sniffers: [✔️ having both extensions seem to provide a good alternative]
+    - [hls-downloader](https://github.com/puemos/hls-downloader): Extension for sniffing and downloading HTTP Live streams (HLS)
+    - [cat-catch](https://github.com/xifangczy/cat-catch): Extension for sniffing resources from a webpage
 - [x] Text editor, document viewer, office suit (native, many)
 - [x] Media player [`mpv` + `yt-dlp` + `ffmpeg`]
   - `mpv`: https://packages.fedoraproject.org/pkgs/mpv/mpv/
