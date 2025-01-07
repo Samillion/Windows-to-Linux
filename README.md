@@ -6,7 +6,7 @@ A list to help me keep track of possible software alternatives to make the exper
 ## Linux
 - Fedora https://fedoraproject.org/
     - or Nobara? https://nobaraproject.org/
-- Gnome DE https://fedoraproject.org/workstation/
+- Gnome DE
 
 ## Software
 I tend to use open source and FOSS software, which in the most part is available for all platforms.
@@ -14,9 +14,9 @@ I tend to use open source and FOSS software, which in the most part is available
 The setback at the moment is with forced ecosystems that don't exist on Linux or yet to be found. (ie: iCloud Drive, IDM...etc)
 
 - [x] Browser
-    - Firefox (native) https://flathub.org/apps/org.mozilla.firefox
+    - Firefox (native) [`dnf`/`rpm`]
     - Brave (native) https://brave.com/linux/#release-channel-installation
-    - Chromium (native) https://docs.fedoraproject.org/en-US/quick-docs/installing-chromium-or-google-chrome-browsers/
+    - Chromium (native) [`dnf`/`rpm`]
 - [x] Google Drive (`Rclone` or `Gnome Accounts`)
     - `Rclone`: https://rclone.org/drive/
     - `Gnome Accounts`: Online use only
@@ -26,15 +26,15 @@ The setback at the moment is with forced ecosystems that don't exist on Linux or
 - [x] Dropbox (native) https://www.dropbox.com/install-linux
 - [x] MEGA (native) https://mega.io/desktop#download
 - [ ] iCloud Drive (none, web)
-- [ ] Proton Drive (none, web - [reference](https://www.reddit.com/r/ProtonDrive/comments/1e34coe/discussion_thread_for_proton_drive_on_linux_lets/))
+- [ ] Proton Drive (none, web) [[reference](https://www.reddit.com/r/ProtonDrive/comments/1e34coe/discussion_thread_for_proton_drive_on_linux_lets/)]
     - Test: `Rclone` https://rclone.org/protondrive/
 - [ ] Internet Download Manager [IDM] (none)
     - Specifically its browser extension integration to capture videos and download them
     - Why this QoL is needed for me: [reference](https://github.com/amir1376/ab-download-manager/issues/9#issuecomment-2470097235)
-    - [ABDM](https://github.com/amir1376/ab-download-manager) is a close match, waiting on [feature progress](https://github.com/amir1376/ab-download-manager/issues/9), if any.
+    - [ABDM](https://github.com/amir1376/ab-download-manager) is a close match, waiting on [feature progress](https://github.com/amir1376/ab-download-manager/issues/9), if any
     - XDM was a possible choice, but development halted for a long time now [[reference](https://github.com/subhra74/xdm/discussions/768#discussioncomment-10842375)]
     - `yt-dlp` offers a static list, so it's not a viable alternative
-    - Find possible video extractors? (ie: apps or extensions) (incomplete)
+    - Find possible video extractors? (ie: apps or extensions) [incomplete]
         - [hls-downloader](https://github.com/puemos/hls-downloader): Web Extension for sniffing and downloading HTTP Live streams (HLS)
 - [x] Text editor, document viewer, office suit (native, many)
 - [x] Media player [`mpv` + `yt-dlp` + `ffmpeg`]
@@ -58,7 +58,7 @@ The setback at the moment is with forced ecosystems that don't exist on Linux or
 - [x] Screen recorder [many, [OBS Studio](https://flathub.org/apps/com.obsproject.Studio)] (native)
 
 ## Useful
-- [Rclone Browser](https://github.com/kapitainsky/RcloneBrowser): Simple cross platform GUI for Rclone
+- [Rclone Browser](https://github.com/kapitainsky/RcloneBrowser): A simple cross platform GUI for Rclone
 - [Bottles](https://github.com/bottlesdevs/Bottles): Run Windows software and games on Linux
 - [Piper](https://github.com/libratbag/piper): GTK application to configure gaming devices
 - [Solaar](https://github.com/pwr-Solaar/Solaar): Linux device manager for Logitech devices
@@ -82,7 +82,11 @@ The setback at the moment is with forced ecosystems that don't exist on Linux or
     - https://www.youtube.com/watch?v=BYIDoD8VdAw
 
 ## Notes
-- Nvidia Drivers: RPM Fusion => Nvidia Drivers. Might need `libnvidia-egl-wayland1`?
-    - Not Gnome, but still a useful reference: https://community.kde.org/Plasma/Wayland/Nvidia
+- Flatpaks are sandboxed by default, which can result in mis-matched themes, no access to folders and such
+    - Use `dnf`/`rpm` for installing a package if available and maintained, otherwise, use verified Flatpaks
+    - Use `Flatseal` to resolve sandboxed issues, if any (name of the related environment variables are needed)
+- Nvidia Drivers: RPM Fusion => Nvidia Drivers
+    - Might need `libnvidia-egl-wayland1`?
+    - Useful reference: https://community.kde.org/Plasma/Wayland/Nvidia
 - Look into enabling non-free options (ie: `ffmpeg`), is it just using RPM Fusion or are there other steps?
-   - Software Center => enable non-free/3rd party (ie: 3rd party codec packages)
+    - Software Center => enable `non-free` (ie: 3rd party codec packages)
