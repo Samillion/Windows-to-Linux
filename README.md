@@ -10,10 +10,17 @@ The goal is to try and plan the best route before making the switch, to not hop 
   - or Nobara? https://nobaraproject.org/
 - Gnome DE
 
+**Switch status:** ❌
+
 ## Process
 I tend to use open source and FOSS software a lot, which in the most part is available for many platforms or an alternative exists already.
 
 #### Setbacks (cons)
+- GPU Drivers:
+  - I keep stumbling upon comments about GPU issues, especially when it comes to Wayland
+    - Some have opted to switch back to X11, which seems to have solved their issues
+    - Wayland has advantages and is still working out its issues. From a user experience point of view, I'm hesitant.
+  - Some other comments here and there, mostly solvable by tinkering with a config or a setting. Still, a bothersome chore
 - Cloud:
   - No alternative or method for `iCloud Drive`
   - `Rclone` is a huge learning curve, even with a frontend like `Rclone Browser`
