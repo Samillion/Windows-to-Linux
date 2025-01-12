@@ -110,6 +110,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
 ## Notes
 - Nvidia Drivers: RPM Fusion => Nvidia Drivers [[setback](#setbacks-cons)]
   - Might need `libnvidia-egl-wayland1`?
+  - Useful reference: https://rpmfusion.org/Howto/NVIDIA
   - Useful reference: https://community.kde.org/Plasma/Wayland/Nvidia
 - Look into enabling non-free options (ie: `ffmpeg`), is it just using RPM Fusion or are there other steps?
   - Software Center => enable `non-free` (ie: 3rd party codec packages)
