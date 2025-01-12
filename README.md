@@ -25,6 +25,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
     - Some have opted to switch back to X11, which seems to have solved their issues
     - Wayland has advantages and is still working out its issues. From a user experience point of view, I'm hesitant
     - Noteworthy: Some distros do not support legacy GPUs (ie: Nobara), there is a workaround usually, but it's an "at your own risk" scenario
+    - There are detailed guides, which I genuinely appreciate, as it shows the level of care from everyone involved. The downside is that it's a lot to take in as a user [[#notes](#notes)]
   - Some other comments here and there, mostly solvable by tinkering with a config or a setting. Still, a bothersome chore
 - Cloud:
   - No alternative or method for `iCloud Drive`
@@ -47,14 +48,14 @@ It is common to suggest "just use online/web version" as a solution, but that is
   - Firefox (native) [`dnf`/`rpm`]
   - Brave (native) https://brave.com/linux/#release-channel-installation
   - Chromium (native) [`dnf`/`rpm`]
-- [ ] Google Drive [[setback](#setbacks-cons)]
+- [ ] Google Drive [[#setback](#setbacks-cons)]
   - `Rclone`: https://rclone.org/drive/
   - `Gnome Accounts`: Online use only
-- [ ] One Drive [[setback](#setbacks-cons)]
+- [ ] One Drive [[#setback](#setbacks-cons)]
   - `Rclone`: https://rclone.org/onedrive/
   - `Gnome Accounts`: Online use only, Gnome 46+
-- [ ] iCloud Drive (none, web) [[setback](#setbacks-cons)]
-- [ ] Proton Drive (none, web) [[reference](https://www.reddit.com/r/ProtonDrive/comments/1e34coe/discussion_thread_for_proton_drive_on_linux_lets/)] [[setback](#setbacks-cons)]
+- [ ] iCloud Drive (none, web) [[#setback](#setbacks-cons)]
+- [ ] Proton Drive (none, web) [[reference](https://www.reddit.com/r/ProtonDrive/comments/1e34coe/discussion_thread_for_proton_drive_on_linux_lets/)] [[#setback](#setbacks-cons)]
   - Test: `Rclone` https://rclone.org/protondrive/
 - [x] Dropbox (native) https://www.dropbox.com/install-linux
 - [x] MEGA (native) https://mega.io/desktop#download
@@ -108,7 +109,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
   - https://www.youtube.com/watch?v=BYIDoD8VdAw
 
 ## Notes
-- Nvidia Drivers: RPM Fusion => Nvidia Drivers [[setback](#setbacks-cons)]
+- Nvidia Drivers: RPM Fusion => Nvidia Drivers [[#setback](#setbacks-cons)]
   - Might need `libnvidia-egl-wayland1`?
   - Useful reference: https://rpmfusion.org/Howto/NVIDIA
   - Useful reference: https://community.kde.org/Plasma/Wayland/Nvidia
