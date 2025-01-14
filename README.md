@@ -23,6 +23,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
 - Outdated Software:
   - Due to policy and the fact that in some cases it's about volunteer based work, some packages are outdated
   - Fedora seems to be balanced, from what I've seen it's mostly Debian based distros and indpendent package support (ie: `flatpak`, `rpm`, `deb`), sometimes none (ie: mpv)
+  - An alternative would be to build/compile packages yourself, which in itself a huge setback and a chore, from a user experience standpoint, especially ones new to Linux
 - GPU Drivers:
   - I keep stumbling upon comments about GPU issues, especially when it comes to Wayland
     - Some have opted to switch back to X11, which seems to have solved their issues
