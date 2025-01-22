@@ -101,6 +101,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
 - [Cartridges](https://flathub.org/apps/page.kramo.Cartridges): A simple game launcher for all of your games
 - [Dosage](https://flathub.org/apps/io.github.diegopvlk.Dosage): Keep track of your treatments
 - [Gnome Dconf Editor](https://wiki.gnome.org/Apps(2f)DconfEditor.html): A viewer and editor of applications internal settings
+  - [Refine](https://flathub.org/apps/page.tesk.Refine) seems to be a decent frontend for Dconf, a possible alternative with QoL experience
 - [Gnome Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks): Customize Gnome DE
 - [Gnome Extensions Manager](https://flathub.org/apps/com.mattjakeman.ExtensionManager): A utility for browsing and installing GNOME Shell Extensions
   - Reference: https://www.omgubuntu.co.uk/best-gnome-shell-extensions
