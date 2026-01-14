@@ -1,22 +1,18 @@
-## Windows-to-Linux
+## :mag: Windows-to-Linux
 A list to help me keep track of possible software alternatives to make the experience reasonable, otherwise the switch will not happen.
 
 I'm not well versed in Linux, so all the information I have is by doing research and comparing results. So errors, bad choices and mistakes are possible.
 
 The goal is to try and plan the best route before making the switch, to not hop back and forth between operating systems.
 
-## System
-Main:
-- CPU: AMD Ryzen 9800X3D
-- RAM: 32GB
-- GPU: Nvidia RTX 5070
+## :computer: System(s)
+| :nut_and_bolt: | Main | Secondary |
+|------|------|-----------|
+| **CPU** | AMD Ryzen 9800X3D | Intel i7 3770K |
+| **RAM** | 32GB DDR5 | 32GB DDR3 |
+| **GPU** | Nvidia RTX 5070 | Nvidia GTX 660 |
 
-Secondary:
-- CPU: Intel i7 3770K
-- RAM: 32GB
-- GPU: Nvidia GTX 660
-
-## Linux
+## :penguin: Linux
 - Debian https://www.debian.org/
   - or Ubuntu https://ubuntu.com/
   - or Linux Mint https://linuxmint.com/
@@ -27,7 +23,7 @@ Secondary:
 
 **Switch status:** ❌
 
-## Process
+## :black_nib: Process
 I tend to use open source and FOSS software a lot, which in the most part is available for many platforms or an alternative exists already.
 
 #### Setbacks (cons)
@@ -61,7 +57,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
   - `yt-dlp` offers a static list, so it's not a viable alternative
 - WhatsApp [✔️ `solved-partially`:`listed`]
 
-## Software
+## :floppy_disk: Software
 - [x] Browser
   - Firefox (native) https://www.firefox.com/en-US/browsers/desktop/linux/
   - Brave (native) https://brave.com/linux/#release-channel-installation
@@ -105,7 +101,8 @@ It is common to suggest "just use online/web version" as a solution, but that is
 - [x] Equalizer [[Easy Effects](https://github.com/wwmm/easyeffects)] (native)
 - [x] Screen recorder [many, [OBS Studio](https://flathub.org/apps/com.obsproject.Studio)] (native)
 
-## Useful
+## :bulb: Useful
+- [Bazaar](https://flathub.org/en/apps/io.github.kolunmi.Bazaar): Flatpak App store for Linux
 - [Rclone Browser](https://github.com/kapitainsky/RcloneBrowser): A simple cross platform GUI for Rclone
 - [Bottles](https://github.com/bottlesdevs/Bottles): Run Windows software and games on Linux
 - [Piper](https://github.com/libratbag/piper): GTK application to configure gaming devices
@@ -131,7 +128,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
     - https://www.youtube.com/watch?v=dZIfjbZN0H8
     - https://www.youtube.com/watch?v=BYIDoD8VdAw
 
-## Notes
+## :memo: Notes
 - Nvidia Drivers: [[#setback](#setbacks-cons)]
   - Might need `libnvidia-egl-wayland1`?
   - Useful reference: (fedora) https://rpmfusion.org/Howto/NVIDIA
