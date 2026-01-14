@@ -13,15 +13,56 @@ The goal is to try and plan the best route before making the switch, to not hop 
 | **GPU** | Nvidia RTX 5070 | Nvidia GTX 660 |
 
 ## :penguin: Linux
-- Debian https://www.debian.org/
-  - or Ubuntu https://ubuntu.com/
-  - or Linux Mint https://linuxmint.com/
-- Fedora https://fedoraproject.org/
-  - or Bazzite https://bazzite.gg/
-  - or Nobara? https://nobaraproject.org/
-- DE: Gnome or KDE
-
-**Switch status:** ❌
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Distributions (Choose One)</th>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th>Website</th>
+      <th>Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Debian</td>
+      <td><a href="https://www.debian.org/">debian.org</a></td>
+      <td>Pure Debian, requires manual configuration, most-likely cli. Outdated (stable) software, unless testing or unstable branch used</td>
+    </tr>
+    <tr>
+      <td>Ubuntu</td>
+      <td><a href="https://ubuntu.com/">ubuntu.com</a></td>
+      <td>Based on Debian, user friendly experience with GUI tools for drivers and such, but mainly with commercial goals (Canonical)</td>
+    </tr>
+    <tr>
+      <td>Mint</td>
+      <td><a href="https://linuxmint.com/">linuxmint.com</a></td>
+      <td>Based on Ubuntu. Main differences seem to be: Cinnamon DE focus, stability, user friendly</td>
+    </tr>
+    <tr>
+      <td>Fedora</td>
+      <td><a href="https://fedoraproject.org/">fedoraproject.org</a></td>
+      <th>Same as Debian but more frequent updates to software and packages</th>
+    </tr>
+    <tr>
+      <td>Bazzite</td>
+      <td><a href="https://bazzite.gg/">bazzite.gg</a></td>
+      <th>Based on Fedora, comes pre-installed with Steam and other game focused optimizations, and has GPU specific ISOs for an easy out of box experience</th>
+    </tr>
+    <tr>
+      <td>Nobara</td>
+      <td><a href="https://nobaraproject.org/">nobaraproject.org</a></td>
+      <th>Same as Bazzite. Difference is, as far as I can tell: philosphy and method</th>
+    </tr>
+    <tr>
+      <td colspan="3">Desktop environment: Gnome or KDE</td>
+    </tr>
+    <tr>
+      <td colspan="3"><strong>Switch status:</strong> ❌</td>
+    </tr>
+  </tbody>
+</table>
 
 ## :black_nib: Process
 I tend to use open source and FOSS software a lot, which in the most part is available for many platforms or an alternative exists already.
@@ -33,7 +74,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
 
 - Outdated Software:
   - Due to policy and the fact that in some cases it's about volunteer based work, some packages are outdated
-  - Fedora seems to be balanced, from what I've seen it's mostly Debian based distros and indpendent package support (ie: `flatpak`, `rpm`, `deb`), sometimes none (ie: mpv)
+  - Fedora seems to be balanced, from what I've seen it's mostly Debian based distros and indpendent package support (ie: `flatpak`, `rpm`, `apt`, `deb`), sometimes none (ie: mpv)
   - An alternative would be to build/compile packages yourself, which in itself a huge setback and a chore, from a user experience standpoint, especially ones new to Linux
 - GPU Drivers:
   - I keep stumbling upon comments about GPU issues, especially when it comes to Wayland
@@ -47,7 +88,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
     - Having auto-sync and mount (local copy) access with my cloud services would definitely be an annoying chore
     - Affects `Proton Drive`, `Google Drive` and `Microsoft OneDrive`
 - Flatpaks are sandboxed by default, which can result in mis-matched themes, no access to folders and such
-  - Use `dnf`/`rpm`/`binary` for installing a package if available and maintained, otherwise, use verified Flatpaks
+  - Use `dnf`/`rpm`/`apt`/`deb`/`binary` for installing a package if available and maintained, otherwise, use verified Flatpaks
   - Use `Flatseal` to resolve sandboxed issues, if any
     - As far as I can tell, sometimes the name of the related environment variables are needed, which is a chore, since I'll have to research them when needed
 - Internet Download Manager (IDM) alternative [✔️ `solved-partially`:`listed`]
@@ -61,7 +102,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
 - [x] Browser
   - Firefox (native) https://www.firefox.com/en-US/browsers/desktop/linux/
   - Brave (native) https://brave.com/linux/#release-channel-installation
-  - Chromium (native) [`dnf`/`rpm`/`deb`]
+  - Chromium (native) [`dnf`/`rpm`/`apt`/`deb`]
 - [ ] Google Drive [[#setback](#setbacks-cons)]
   - `Rclone`: https://rclone.org/drive/
   - `Gnome Accounts`: Online use only
