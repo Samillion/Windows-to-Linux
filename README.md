@@ -6,9 +6,13 @@ I'm not well versed in Linux, so all the information I have is by doing research
 The goal is to try and plan the best route before making the switch, to not hop back and forth between operating systems.
 
 ## Linux
+- Debian https://www.debian.org/
+  - or Ubuntu https://ubuntu.com/
+  - or Linux Mint https://linuxmint.com/
 - Fedora https://fedoraproject.org/
+  - or Bazzite https://bazzite.gg/
   - or Nobara? https://nobaraproject.org/
-- Gnome DE
+- DE: Gnome or KDE
 
 **Switch status:** ❌
 
@@ -16,7 +20,7 @@ The goal is to try and plan the best route before making the switch, to not hop 
 I tend to use open source and FOSS software a lot, which in the most part is available for many platforms or an alternative exists already.
 
 #### Setbacks (cons)
-The following issues are not Fedora specific, they seem to be a general occurance within Linux.
+The following issues are not Fedora or Debian specific, they seem to be a general occurance within Linux.
 
 It is common to suggest "just use online/web version" as a solution, but that is not effective, it's simply a forced compromise, unfortunately.
 
@@ -26,26 +30,25 @@ It is common to suggest "just use online/web version" as a solution, but that is
   - An alternative would be to build/compile packages yourself, which in itself a huge setback and a chore, from a user experience standpoint, especially ones new to Linux
 - GPU Drivers:
   - I keep stumbling upon comments about GPU issues, especially when it comes to Wayland
-    - Some have opted to switch back to X11, which seems to have solved their issues
-    - Wayland has advantages and is still working out its issues. From a user experience point of view, I'm hesitant
-    - Noteworthy: Some distros do not support legacy GPUs (ie: Nobara), there is a workaround usually, but it's an "at your own risk" scenario
-    - There are detailed guides, which I genuinely appreciate, as it shows the level of care from everyone involved. The downside is that it's a lot to take in as a user [[#notes](#notes)]
+    - Some have opted to switch back to X11, which seems to have solved their issues with legacy/old GPUs.
+    - Noteworthy: Some distros do not support legacy/old GPUs due to Wayland and old drivers not working with it, there is a workaround usually, but it's an "at your own risk" scenario
+    - There are detailed guides. The downside is that it's a lot to take in as a user [[#notes](#notes)]
   - Some other comments here and there, mostly solvable by tinkering with a config or a setting. Still, a bothersome chore
 - Cloud:
-  - No alternative or method for `iCloud Drive`
+  - No alternative or method for `iCloud Drive` or `Proton Drive`
   - `Rclone` is a huge learning curve, even with a frontend like `Rclone Browser`
     - Having auto-sync and mount (local copy) access with my cloud services would definitely be an annoying chore
     - Affects `Proton Drive`, `Google Drive` and `Microsoft OneDrive`
 - Flatpaks are sandboxed by default, which can result in mis-matched themes, no access to folders and such
-  - Use `dnf`/`rpm` for installing a package if available and maintained, otherwise, use verified Flatpaks
+  - Use `dnf`/`rpm`/`binary` for installing a package if available and maintained, otherwise, use verified Flatpaks
   - Use `Flatseal` to resolve sandboxed issues, if any
     - As far as I can tell, sometimes the name of the related environment variables are needed, which is a chore, since I'll have to research them when needed
-- Internet Download Manager (IDM) alternative [✔️ `solved`:`listed`]
+- Internet Download Manager (IDM) alternative [✔️ `solved-partially`:`listed`]
   - Specifically its browser extension integration to capture videos and download them
   - [ABDM](https://github.com/amir1376/ab-download-manager) is a close match, waiting on [feature progress](https://github.com/amir1376/ab-download-manager/issues/9), if any
   - XDM was a possible choice, but development halted for a long time now [[reference](https://github.com/subhra74/xdm/discussions/768#discussioncomment-10842375)]
   - `yt-dlp` offers a static list, so it's not a viable alternative
-- WhatsApp [✔️ `solved`:`listed`]
+- WhatsApp [✔️ `solved-partially`:`listed`]
 
 ## Software
 - [x] Browser
@@ -64,12 +67,15 @@ It is common to suggest "just use online/web version" as a solution, but that is
 - [x] Dropbox (native) https://www.dropbox.com/install-linux
 - [x] MEGA (native) https://mega.io/desktop#download
 - [x] Internet Download Manager [IDM] (alternative method)
-  - Video sniffers: [✔️ having both extensions seem to provide a good alternative]
+  - Video sniffers: [✔️ having both extensions seem to provide a good enough alternative]
     - [hls-downloader](https://github.com/puemos/hls-downloader): Extension for sniffing and downloading HTTP Live streams (HLS)
     - [cat-catch](https://github.com/xifangczy/cat-catch): Extension for sniffing resources from a webpage
 - [x] Text editor, document viewer, office suit (native, many)
 - [x] Media player [`mpv` + `yt-dlp` + `ffmpeg`]
-  - `mpv`: https://packages.fedoraproject.org/pkgs/mpv/mpv/
+  - `mpv`:
+    - https://packages.fedoraproject.org/pkgs/mpv/mpv/ (only stable release, not git)
+    - https://deb-multimedia.org/dists/testing/main/binary-amd64/package/mpv
+    - https://fruit.je/apt
   - `yt-dlp`: https://github.com/yt-dlp/yt-dlp/wiki/Installation
   - `ffmpeg`: https://www.ffmpeg.org/download.html#build-linux
 - [x] Image viewer (native, many)
@@ -80,7 +86,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
 - [x] Multi-factor auth [[Ente Authe](https://github.com/ente-io/ente#ente-auth)] (native)
 - [x] Local share [[LocalSend](https://github.com/localsend/localsend)] (native)
 - [x] Messaging
-  - [SimpleXChat](https://github.com/simplex-chat/simplex-chat) (native)
+  - [Signal](https://signal.org/download/linux/) (❌ native for Debian based only)
   - [Telegram](https://flathub.org/apps/org.telegram.desktop) (native)
   - [Fractal](https://gitlab.gnome.org/World/fractal) [Matrix] (native)
   - [Discord](https://flathub.org/apps/com.discordapp.Discord) (native)
@@ -106,18 +112,21 @@ It is common to suggest "just use online/web version" as a solution, but that is
 - [Gnome Extensions Manager](https://flathub.org/apps/com.mattjakeman.ExtensionManager): A utility for browsing and installing GNOME Shell Extensions
   - Reference: https://www.omgubuntu.co.uk/best-gnome-shell-extensions
 - [Gnome Firmware](https://gitlab.gnome.org/World/gnome-firmware): Manage firmware on devices supported by `fwupd`
-- [RPM Fusion](https://rpmfusion.org/): Provides software that the Fedora Project doesn't want to ship
-- XWayland Video Bridge: Utility to allow streaming Wayland windows to X applications
-  - As far as I can tell, this isn't needed anymore (ie: Discord screen share), need to verify
-- Fedora recommendations
-  - https://www.youtube.com/watch?v=dZIfjbZN0H8
-  - https://www.youtube.com/watch?v=BYIDoD8VdAw
+- Extras:
+  - [RPM Fusion](https://rpmfusion.org/): Provides software that the Fedora Project doesn't want to ship
+  - XWayland Video Bridge: Utility to allow streaming Wayland windows to X applications
+    - As far as I can tell, this isn't needed anymore (ie: Discord screen share), need to verify
+  - Fedora recommendations
+    - https://www.youtube.com/watch?v=dZIfjbZN0H8
+    - https://www.youtube.com/watch?v=BYIDoD8VdAw
 
 ## Notes
-- Nvidia Drivers: RPM Fusion => Nvidia Drivers [[#setback](#setbacks-cons)]
+- Nvidia Drivers: [[#setback](#setbacks-cons)]
   - Might need `libnvidia-egl-wayland1`?
-  - Useful reference: https://rpmfusion.org/Howto/NVIDIA
+  - Useful reference: (fedora) https://rpmfusion.org/Howto/NVIDIA
+  - Useful reference: (debian) https://wiki.debian.org/NvidiaGraphicsDrivers
   - Useful reference: https://community.kde.org/Plasma/Wayland/Nvidia
 - Look into enabling non-free options (ie: `ffmpeg`):
   - Software Center => enable `non-free` (ie: 3rd party codec packages)
-  - Useful reference: https://rpmfusion.org/Howto/Multimedia
+  - Useful reference: (fedora) https://rpmfusion.org/Howto/Multimedia
+  - Useful reference: (debian) https://wiki.debian.org/DebianSoftware
