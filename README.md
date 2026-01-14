@@ -5,6 +5,17 @@ I'm not well versed in Linux, so all the information I have is by doing research
 
 The goal is to try and plan the best route before making the switch, to not hop back and forth between operating systems.
 
+## System
+Main:
+- CPU: AMD Ryzen 9800X3D
+- RAM: 32GB
+- GPU: Nvidia RTX 5070
+
+Secondary:
+- CPU: Intel i7 3770K
+- RAM: 32GB
+- GPU: Nvidia GTX 660
+
 ## Linux
 - Debian https://www.debian.org/
   - or Ubuntu https://ubuntu.com/
@@ -35,7 +46,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
     - There are detailed guides. The downside is that it's a lot to take in as a user [[#notes](#notes)]
   - Some other comments here and there, mostly solvable by tinkering with a config or a setting. Still, a bothersome chore
 - Cloud:
-  - No alternative or method for `iCloud Drive` or `Proton Drive`
+  - No alternative or method for `iCloud Drive`
   - `Rclone` is a huge learning curve, even with a frontend like `Rclone Browser`
     - Having auto-sync and mount (local copy) access with my cloud services would definitely be an annoying chore
     - Affects `Proton Drive`, `Google Drive` and `Microsoft OneDrive`
@@ -52,9 +63,9 @@ It is common to suggest "just use online/web version" as a solution, but that is
 
 ## Software
 - [x] Browser
-  - Firefox (native) [`dnf`/`rpm`]
+  - Firefox (native) https://www.firefox.com/en-US/browsers/desktop/linux/
   - Brave (native) https://brave.com/linux/#release-channel-installation
-  - Chromium (native) [`dnf`/`rpm`]
+  - Chromium (native) [`dnf`/`rpm`/`deb`]
 - [ ] Google Drive [[#setback](#setbacks-cons)]
   - `Rclone`: https://rclone.org/drive/
   - `Gnome Accounts`: Online use only
@@ -72,21 +83,21 @@ It is common to suggest "just use online/web version" as a solution, but that is
     - [cat-catch](https://github.com/xifangczy/cat-catch): Extension for sniffing resources from a webpage
 - [x] Text editor, document viewer, office suit (native, many)
 - [x] Media player [`mpv` + `yt-dlp` + `ffmpeg`]
-  - `mpv`:
+  - `mpv`
     - https://packages.fedoraproject.org/pkgs/mpv/mpv/ (only stable release, not git)
     - https://deb-multimedia.org/dists/testing/main/binary-amd64/package/mpv
     - https://fruit.je/apt
   - `yt-dlp`: https://github.com/yt-dlp/yt-dlp/wiki/Installation
   - `ffmpeg`: https://www.ffmpeg.org/download.html#build-linux
 - [x] Image viewer (native, many)
-- [x] Music player [[museeks](https://github.com/martpie/museeks)] (native)
+- [x] Music player (native, many)
 - [x] Transcoder [[Handbrake](https://github.com/HandBrake/HandBrake)] (native)
 - [x] Remote desktop [[RustDesk](https://github.com/rustdesk/rustdesk)] (native)
 - [x] Password manager [[KeePassXC](https://github.com/keepassxreboot/keepassxc)] (native)
 - [x] Multi-factor auth [[Ente Authe](https://github.com/ente-io/ente#ente-auth)] (native)
 - [x] Local share [[LocalSend](https://github.com/localsend/localsend)] (native)
 - [x] Messaging
-  - [Signal](https://signal.org/download/linux/) (❌ native for Debian based only)
+  - [Signal](https://signal.org/download/linux/) (❌ official native for Debian based only)
   - [Telegram](https://flathub.org/apps/org.telegram.desktop) (native)
   - [Fractal](https://gitlab.gnome.org/World/fractal) [Matrix] (native)
   - [Discord](https://flathub.org/apps/com.discordapp.Discord) (native)
