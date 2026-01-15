@@ -6,11 +6,12 @@ I'm not well versed in Linux, so all the information I have is by doing research
 The goal is to try and plan the best route before making the switch, to not hop back and forth between operating systems.
 
 ## :computer: System(s)
-| :nut_and_bolt: | Main | Secondary |
-|------|------|-----------|
-| **CPU** | AMD Ryzen 9800X3D | Intel i7 3770K |
-| **RAM** | 32GB DDR5 | 32GB DDR3 |
-| **GPU** | Nvidia RTX 5070 | Nvidia GTX 660 |
+| :nut_and_bolt: | Main                                                                | Secondary                                                                                                                                                   |
+|----------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **CPU**        | AMD Ryzen 9800X3D                                                   | Intel i7 3770K                                                                                                                                              |
+| **RAM**        | 32GB DDR5                                                           | 32GB DDR3                                                                                                                                                   |
+| **GPU**        | Nvidia RTX 5070                                                     | Nvidia GTX 660                                                                                                                                              |
+| **Notes**      | ✔️ Modern hardware, should work fine on distros with Wayland only. | ❌ Struggles to work due to distros dropping XORG. Open source driver works with Wayland, but tested performance on GPU makes even surfing web intolerable. |
 
 ## :penguin: Linux
 <table>
