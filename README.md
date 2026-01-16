@@ -104,7 +104,6 @@ It is common to suggest "just use online/web version" as a solution, but that is
 - [x] Browser
   - Firefox (native) https://www.firefox.com/en-US/browsers/desktop/linux/
   - Brave (native) https://brave.com/linux/#release-channel-installation
-  - Chromium (native) [`dnf`/`rpm`/`apt`/`deb`]
 - [ ] Google Drive [[#setback](#setbacks-cons)]
   - `Rclone`: https://rclone.org/drive/
   - `Gnome Accounts`: Online use only
@@ -126,7 +125,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
   - `mpv`: No official packages
     - https://packages.fedoraproject.org/pkgs/mpv/mpv/ (only stable release, not git)
     - https://mpv.io/installation/
-    - Hopefully one day they provide an official Flatpak to stop relying on third parties
+    - Hopefully one day they provide an official Flatpak to stop relying on third parties, regardless of distro
   - `yt-dlp`: https://github.com/yt-dlp/yt-dlp/wiki/Installation
   - `ffmpeg`: https://www.ffmpeg.org/download.html#build-linux
 - [x] Image viewer (native, many)
@@ -138,7 +137,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
 - [x] Local share [[LocalSend](https://github.com/localsend/localsend)] (native)
 - [x] Messaging
   - [Signal](https://signal.org/download/linux/) (❌ official native for Debian based only. Why!?)
-    - There is an unofficial Flatpak and some community solutions to make it work on Fedora, but, really have no idea why a secure communication software opts out of providing their own official packages
+    - There is an unofficial Flatpak and some community solutions to make it work on Fedora, but, I have no idea why a secure communication software opts out of providing their own official packages
   - [Telegram](https://flathub.org/apps/org.telegram.desktop) (native)
   - [Fractal](https://gitlab.gnome.org/World/fractal) [Matrix] (native)
   - [Discord](https://flathub.org/apps/com.discordapp.Discord) (native)
@@ -177,16 +176,21 @@ It is common to suggest "just use online/web version" as a solution, but that is
 ## :memo: Notes
 By far the biggest setback on Linux is GPU driver. Not Linux's fault, just companies refusing to provide proper support and updates. 
 
-It is actually easier to have older hardware work on Windows than Linux sometimes, especially with hardware like Nvidia and Broadcom. Which is sadly a big deal to people that want to migrate. Most just want things to work, easily.
+It is actually easier to have older hardware work on Windows than Linux sometimes, especially with hardware like Nvidia and Broadcom. 
 
-The other notable issue is gaming. Many games will just not work due to how their anti-cheat methods are applied. Companies can provide patches to make it work. Hopefully, one day.
+Which is sadly a big deal to people that want to migrate. Most just want things to work, easily. A lot of people looking to migrate run older hardware, and the out-of-box experience it could cause, would definitely make it a stopping point.
 
-- Nvidia Drivers: [[#setback](#setbacks-cons)]
+The other notable issue is gaming. Many games will not work due to how their anti-cheat methods are applied. Companies can provide patches to make it work. hopefully it happens soon.
+
+A good list to check for games compatibility on Linux: https://www.protondb.com/explore
+
+Nvidia Drivers: [[#setback](#setbacks-cons)]
   - Might need `libnvidia-egl-wayland1`?
   - Useful reference: (fedora) https://rpmfusion.org/Howto/NVIDIA
   - Useful reference: (debian) https://wiki.debian.org/NvidiaGraphicsDrivers
   - Useful reference: https://community.kde.org/Plasma/Wayland/Nvidia
-- Look into enabling non-free options (ie: `ffmpeg`):
+
+Look into enabling non-free options (ie: `ffmpeg`):
   - Software Center => enable `non-free` (ie: 3rd party codec packages)
   - Useful reference: (fedora) https://rpmfusion.org/Howto/Multimedia
   - Useful reference: (debian) https://wiki.debian.org/DebianSoftware
