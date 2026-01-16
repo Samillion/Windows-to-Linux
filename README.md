@@ -1,17 +1,17 @@
 ## :mag: Windows-to-Linux
-A list to help me keep track of possible software alternatives to make the experience reasonable, otherwise the switch will not happen.
-
-I'm not well versed in Linux, so all the information I have is by doing research and comparing results. So errors, bad choices and mistakes are possible.
+A record to help me keep track of possible software alternatives and solutions to make the experience reasonable, otherwise the switch will not happen.
 
 The goal is to try and plan the best route before making the switch, to not hop back and forth between operating systems.
 
+I'm not well versed in Linux, so all the information I have is by doing research and comparing results. Errors, bad choices and mistakes are possible.
+
 ## :computer: System(s)
-| :nut_and_bolt: | Main                                                                | Secondary                                                                                                                                                   |
-|----------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CPU**        | AMD Ryzen 9800X3D                                                   | Intel i7 3770K                                                                                                                                              |
-| **RAM**        | 32GB DDR5                                                           | 32GB DDR3                                                                                                                                                   |
-| **GPU**        | Nvidia RTX 5070                                                     | Nvidia GTX 660                                                                                                                                              |
-| **Notes**      | ✔️ Modern hardware, should work fine on distros with Wayland only. | ❌ Struggles to work due to distros dropping XORG. Open source driver works with Wayland, but tested performance on GPU makes even surfing web intolerable. |
+| :nut_and_bolt: | Main                                                                | Secondary                                                                                                                                    |
+|----------------|---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| **CPU**        | AMD Ryzen 9800X3D                                                   | Intel i7 3770K                                                                                                                               |
+| **RAM**        | 32GB DDR5                                                           | 32GB DDR3                                                                                                                                    |
+| **GPU**        | Nvidia RTX 5070                                                     | Nvidia GTX 660                                                                                                                               |
+| **Notes**      | ✔️ Modern hardware, should work fine on distros with Wayland only. | ❌ Uses old driver that doesn't work on Wayland. Open source driver works, but tested performance on GPU makes even surfing web intolerable. |
 
 ## :penguin: Linux
 <table>
@@ -39,12 +39,12 @@ The goal is to try and plan the best route before making the switch, to not hop 
     <tr>
       <td>Mint</td>
       <td><a href="https://linuxmint.com/">linuxmint.com</a></td>
-      <td>Based on Ubuntu. Main differences seem to be: Cinnamon DE focus, stability, user friendly</td>
+      <td>Based on Ubuntu. Main differences seem to be: Cinnamon DE focus, stability, user friendly and no Snaps</td>
     </tr>
     <tr>
       <td>Fedora</td>
       <td><a href="https://fedoraproject.org/">fedoraproject.org</a></td>
-      <th>Same as Debian but more frequent updates to software and packages</th>
+      <th>Same as Debian, as in it's not based on another distribution. Difference is that it has more frequent updates to software and packages, almost cutting edge</th>
     </tr>
     <tr>
       <td>Bazzite</td>
@@ -79,25 +79,26 @@ It is common to suggest "just use online/web version" as a solution, but that is
   - An alternative would be to build/compile packages yourself, which in itself a huge setback and a chore, from a user experience standpoint, especially ones new to Linux
 - GPU Drivers:
   - I keep stumbling upon comments about GPU issues, especially when it comes to Wayland
-    - Some have opted to switch back to X11, which seems to have solved their issues with legacy/old GPUs.
-    - Noteworthy: Some distros do not support legacy/old GPUs due to Wayland and old drivers not working with it, there is a workaround usually, but it's an "at your own risk" scenario
-    - There are detailed guides. The downside is that it's a lot to take in as a user [[#notes](#notes)]
-  - Some other comments here and there, mostly solvable by tinkering with a config or a setting. Still, a bothersome chore
+    - Some have opted to switch back to X11, since old drivers work well on it. Though many DEs and distros are dropping XORG one after the other, for good reasons but bad for older GPUs
+    - There are detailed guides. The downside is that it's a lot to take in as a user, compared to Windows' "just works". [[#notes](#memo-notes)]
+  - Some other comments here and there, mostly solvable by tinkering with a config or a setting that sometimes have a label of "at your own risk". Still, a bothersome chore
 - Cloud:
   - No alternative or method for `iCloud Drive`
   - `Rclone` is a huge learning curve, even with a frontend like `Rclone Browser`
     - Having auto-sync and mount (local copy) access with my cloud services would definitely be an annoying chore
     - Affects `Proton Drive`, `Google Drive` and `Microsoft OneDrive`
 - Flatpaks are sandboxed by default, which can result in mis-matched themes, no access to folders and such
-  - Use `dnf`/`rpm`/`apt`/`deb`/`binary` for installing a package if available and maintained, otherwise, use verified Flatpaks
+  - Use `dnf`/`rpm`/`apt`/`deb`/`binary` for installing a package if available and maintained officially, otherwise, use verified Flatpaks
   - Use `Flatseal` to resolve sandboxed issues, if any
     - As far as I can tell, sometimes the name of the related environment variables are needed, which is a chore, since I'll have to research them when needed
 - Internet Download Manager (IDM) alternative [✔️ `solved-partially`:`listed`]
   - Specifically its browser extension integration to capture videos and download them
-  - [ABDM](https://github.com/amir1376/ab-download-manager) is a close match, waiting on [feature progress](https://github.com/amir1376/ab-download-manager/issues/9), if any
+  - [ABDM](https://github.com/amir1376/ab-download-manager) is a close match, ~~waiting on [feature progress](https://github.com/amir1376/ab-download-manager/issues/9), if any~~
+    - Feature is added, but unfortunately it does not work half the time. Needs to mature, hopefully
   - XDM was a possible choice, but development halted for a long time now [[reference](https://github.com/subhra74/xdm/discussions/768#discussioncomment-10842375)]
   - `yt-dlp` offers a static list, so it's not a viable alternative
 - WhatsApp [✔️ `solved-partially`:`listed`]
+  - Not really an optimal solution, just using PWA, which would make some features unavailable (ie: calls)
 
 ## :floppy_disk: Software
 - [x] Browser
@@ -119,12 +120,13 @@ It is common to suggest "just use online/web version" as a solution, but that is
   - Video sniffers: [✔️ having both extensions seem to provide a good enough alternative]
     - [hls-downloader](https://github.com/puemos/hls-downloader): Extension for sniffing and downloading HTTP Live streams (HLS)
     - [cat-catch](https://github.com/xifangczy/cat-catch): Extension for sniffing resources from a webpage
+    - **Note:** It's not ideal nor does it work the same as IDM, but it's a compromise, better than nothing
 - [x] Text editor, document viewer, office suit (native, many)
 - [x] Media player [`mpv` + `yt-dlp` + `ffmpeg`]
-  - `mpv`
+  - `mpv`: No official packages
     - https://packages.fedoraproject.org/pkgs/mpv/mpv/ (only stable release, not git)
-    - https://deb-multimedia.org/dists/testing/main/binary-amd64/package/mpv
-    - https://fruit.je/apt
+    - https://mpv.io/installation/
+    - Hopefully one day they provide an official Flatpak to stop relying on third parties
   - `yt-dlp`: https://github.com/yt-dlp/yt-dlp/wiki/Installation
   - `ffmpeg`: https://www.ffmpeg.org/download.html#build-linux
 - [x] Image viewer (native, many)
@@ -135,11 +137,13 @@ It is common to suggest "just use online/web version" as a solution, but that is
 - [x] Multi-factor auth [[Ente Authe](https://github.com/ente-io/ente#ente-auth)] (native)
 - [x] Local share [[LocalSend](https://github.com/localsend/localsend)] (native)
 - [x] Messaging
-  - [Signal](https://signal.org/download/linux/) (❌ official native for Debian based only)
+  - [Signal](https://signal.org/download/linux/) (❌ official native for Debian based only. Why!?)
+    - There is an unofficial Flatpak and some community solutions to make it work on Fedora, but, really have no idea why a secure communication software opts out of providing their own official packages
   - [Telegram](https://flathub.org/apps/org.telegram.desktop) (native)
   - [Fractal](https://gitlab.gnome.org/World/fractal) [Matrix] (native)
   - [Discord](https://flathub.org/apps/com.discordapp.Discord) (native)
   - WhatsApp (Web app, through Brave or Chromium)
+    - Note: Some features might not work as a PWA, like calls and such
 - [x] Equalizer [[Easy Effects](https://github.com/wwmm/easyeffects)] (native)
 - [x] Screen recorder [many, [OBS Studio](https://flathub.org/apps/com.obsproject.Studio)] (native)
 
@@ -171,6 +175,12 @@ It is common to suggest "just use online/web version" as a solution, but that is
     - https://www.youtube.com/watch?v=BYIDoD8VdAw
 
 ## :memo: Notes
+By far the biggest setback on Linux is GPU driver. Not Linux's fault, just companies refusing to provide proper support and updates. 
+
+It is actually easier to have older hardware work on Windows than Linux sometimes, especially with hardware like Nvidia and Broadcom. Which is sadly a big deal to people that want to migrate. Most just want things to work, easily.
+
+The other notable issue is gaming. Many games will just not work due to how their anti-cheat methods are applied. Companies can provide patches to make it work. Hopefully, one day.
+
 - Nvidia Drivers: [[#setback](#setbacks-cons)]
   - Might need `libnvidia-egl-wayland1`?
   - Useful reference: (fedora) https://rpmfusion.org/Howto/NVIDIA
