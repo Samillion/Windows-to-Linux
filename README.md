@@ -97,8 +97,7 @@ It is common to suggest "just use online/web version" as a solution, but that is
     - Feature is added, but unfortunately it does not work half the time. Needs to mature, hopefully
   - XDM was a possible choice, but development halted for a long time now [[reference](https://github.com/subhra74/xdm/discussions/768#discussioncomment-10842375)]
   - `yt-dlp` offers a static list, so it's not a viable alternative
-- WhatsApp [✔️ `solved-partially`:`listed`]
-  - Not really an optimal solution, just using PWA, which would make some features unavailable (ie: calls)
+- WhatsApp [✔️ `solved`:`listed`]
 
 ## :floppy_disk: Software
 - [x] Browser
@@ -142,7 +141,8 @@ It is common to suggest "just use online/web version" as a solution, but that is
   - [Fractal](https://gitlab.gnome.org/World/fractal) [Matrix] (native)
   - [Discord](https://flathub.org/apps/com.discordapp.Discord) (native)
   - WhatsApp (Web app, through Brave or Chromium)
-    - Note: Some features might not work as a PWA, like calls and such
+    - ~~Note: Some features might not work as a PWA, like calls and such~~
+    - Voice and video calls work on WhatsApp Web [[Source](https://www.ghacks.net/2026/02/11/whatsapp-web-finally-gets-built-in-voice-and-video-calling/)]
 - [x] Equalizer [[Easy Effects](https://github.com/wwmm/easyeffects)] (native)
 - [x] Screen recorder [many, [OBS Studio](https://flathub.org/apps/com.obsproject.Studio)] (native)
 
